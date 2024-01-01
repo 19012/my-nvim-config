@@ -1,5 +1,6 @@
 vim.g.mapleader = " "
 
+-- move highlighted text
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
@@ -20,9 +21,11 @@ vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
+-- increment/Decrement the next number on this line
 vim.keymap.set('n', '+', '<C-a>')
 vim.keymap.set('n', '-', '<C-x>')
 
+-- Jump to start and end of line using home row keys
 vim.keymap.set('', 'H', '^', { remap = true })
 vim.keymap.set('', 'L', '$', { remap = true })
 
